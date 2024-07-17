@@ -8,16 +8,23 @@
 </head>
 <body>
     <div class="new-car-block">
-        <div class="car-pic">
-            <input class="image-input" id="image-input" placeholder="Фото машины" type="file">
+        <form method="post">
             <div class="car-image-block">
-                <img class="car-image" id="car-image">
+                <label>Загрузите фото машины*</label>
+                <input  id="imageInput" name="photo" type="file" required>
+                <img id="carImage" class="car-image">
             </div>
-        </div>
-        <input placeholder="Имя машины" name="CARNAME">
-        <input placeholder="Дата выпуска" type="number" name="CARDATE">
-        <input placeholder="Цена" type="number" name="PRICE">
-        <button id="add">Добавить</button>
+            <label >Название машины*</label>
+            <input id="name" name="name" type="text" required>
+
+            <label >Год выпуска машины</label>
+            <input id="date" name="date" type="number">
+
+            <label >Цена аренды</label>
+            <input id="price" name="price" type="number">
+
+            <input type="submit" name="submitForm" value="Добавить машину">
+        </form>
     </div>
     <script src="./admin.js"></script>
 </body>

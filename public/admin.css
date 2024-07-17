@@ -61,3 +61,14 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+
+input {
+	border: 5px solid rgb(92, 92, 92);
+}
