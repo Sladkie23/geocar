@@ -19,7 +19,7 @@ imageInput.addEventListener("input",(event)=> {
 
 //  Сбор данных из html
 
-ocument.querySelector(`form`).addEventListener("submit", function(event) {
+document.querySelector(`form`).addEventListener("submit", function(event) {
     event.preventDefault()
 
     const data = {
@@ -34,7 +34,7 @@ ocument.querySelector(`form`).addEventListener("submit", function(event) {
 })
 
 async function sendForm(data) {
-    const res = await fetch('./admin_add_car.php', {
+    const res = await fetch('./admin.php', {
         method: "POST",
         headers: {"Content-type": "application/json"},
         body: JSON.stringify(data)
