@@ -34,11 +34,12 @@ document.querySelector(`form`).addEventListener("submit", function(event) {
 })
 
 async function sendForm(data) {
-    const res = await fetch('./admin.php', {
+    const res = await fetch('addcar.php', {
         method: "POST",
         headers: {"Content-type": "application/json"},
         body: JSON.stringify(data)
     })
+    return true
 }
 
 
