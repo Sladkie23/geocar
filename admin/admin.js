@@ -1,7 +1,9 @@
+"use strict"
 //переменные
 
 const imageInput = document.getElementById("imageInput")
 const carImage = document.getElementById("carImage")
+const form = document.getElementById('form')
 
 //отображение картинки после загрузки
 
@@ -17,28 +19,27 @@ imageInput.addEventListener("input",(event)=> {
 
 
 
-//  Сбор данных из html
+//  Отправка данных на сервер
 
-document.querySelector(`form`).addEventListener("submit", function(event) {
+form.addEventListener('submit',(event)=>{
     event.preventDefault()
-
     const data = {
-        photo: carImage,
-        name: document.getElementById(`name`).value,
-        date: document.getElementById(`date`).value,
-        price: document.getElementById(`price`).value
+        name: document.getElementById('name').value,
+        year: document.getElementById('date').value,
+        price: document.getElementById('price').value,
     }
-    console.log(data)
-
-    sendForm(data)
+    return sendData('./addcar.php', data)
 })
 
-async function sendForm(data) {
-    const res = await fetch('addcar.php', {
-        method: "POST",
-        headers: {"Content-type": "application/json"},
-        body: JSON.stringify(data)
+
+const sendData = async(url, data) => {
+    const response = await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
     })
+    if (!response.ok) {
+        throw new Error(`Error on address ${url}, error status ${response}`)
+    }
     return true
 }
 
