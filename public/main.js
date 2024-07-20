@@ -1,22 +1,3 @@
-document.querySelector('form').addEventListener('submit', (event)=>{
-    event.preventDefault()
-    const data = {
-        name: 'name',
-        year: "year",
-        price: 'price'
-    }
-    console.log(getData('/getCars.php', data))
-})
-
-const getData = async(url)=> {
-    const response = await fetch(url, {
-        method: 'GET',
-    })
-    if (!response.ok) {
-        throw new Error(`Error on address ${url}, error status ${response}`)
-    }
-    console.log(response)
-}
 
 
 
@@ -24,7 +5,23 @@ const getData = async(url)=> {
 
 
 
-const body = document.querySelector("body")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const body = document.querySelector("body")
 
 
 let vehicleCard = document.createElement("div")
@@ -46,4 +43,4 @@ carPic.insertAdjacentElement("afterbegin", pic)
 vehicleCard.insertAdjacentElement("beforeend", carName)
 vehicleCard.insertAdjacentElement("beforeend", carYear)
 vehicleCard.insertAdjacentElement("beforeend", carPrice)
-
+*/
