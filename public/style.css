@@ -50,7 +50,6 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     font-family: "SansThin";
     width: 100%;
     height: 100%;
-    background-color: red;
 }
 .header {
     background-image: url(/materials/images/Head_Background.png);
@@ -113,3 +112,51 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     font-weight: 300;
     letter-spacing: 9px;
 }
+
+.main {
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+}
+
+.main__container {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.main__notice {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__notice__elem {
+    width: 379px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 4px 4px 8px;
+    border-radius: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.main__notice__elem img {
+    width: 100px;
+    height: 100px;
+}
+.main__notice__elem div {
+    width: 85px;
+    height: 1px;
+    background-color: black;
+}
+.main__notice__elem p {
+    text-align: center;
+    width: 221px;
+    height: 187px;
+}
+
