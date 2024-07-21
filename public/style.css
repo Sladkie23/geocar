@@ -150,13 +150,104 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     height: 100px;
 }
 .main__notice__elem div {
+    min-width: 243px;
+    min-height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.main__notice__elem hr {
     width: 85px;
     height: 1px;
     background-color: black;
 }
+.main__notice__elem h2 {
+    font-weight: bolder;
+}
+
 .main__notice__elem p {
     text-align: center;
     width: 221px;
     height: 187px;
+}
+
+.main__car__list {
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+}
+
+.main__car__list__container {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.car__list__text {
+    min-width: 537px;
+    height: 98px;
+    font-size: 38px;
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.car__list__text div {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 126, 126);
+    border-radius: 40px;
+}
+
+.car__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 363px);
+    grid-template-rows: repeat(auto-fill, 430px);
+    justify-content: space-between;
+    gap: 65px;
+}
+.car__card {
+    height: 430px;
+    width: 363px;
+}
+.car__image {
+    width: 363px;
+    height: 280px;
+}
+.car__image img {
+    width: 100%;
+    height: 100%;
+    border-color: rgba(255, 255, 255, 0);
+}
+.car__info {
+    width: 363px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+    padding: 15px;
+}
+.car__info p:first-child {
+    font-size: 22px;
+    font-weight: bold;
+}
+.rent__button {
+    width: 363px;
+    height: 40px;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rent__button img {
+    margin-top: 2px;
 }
 
