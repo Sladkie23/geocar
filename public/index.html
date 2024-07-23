@@ -21,8 +21,8 @@
                     <div class="logo"><img src="/materials/images/logo/Head_CREtext.png"></div>
                     <div class="buttons">
                         <button><img src="/materials/images/Head_HomeIcon.png">HOME</button>
-                        <button><img src="/materials/images/Head_CarIcon.png">OUR CARS</button>
-                        <button><img src="/materials/images/Head_ContIocn.png">CONTACTS</button>
+                        <button><img src="/materials/images/Head_CarIcon.png"><a href="#mclc">OUR CARS</a></button>
+                        <button><img src="/materials/images/Head_ContIocn.png"><a href="#cbc">CONTACTS</a></button>
                         <button>LANGUAGE<img src="/materials/images/Head_LangIcon.png"></button>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
             </div>
         </main>
         <div class="main__car__list">
-            <div class="main__car__list__container">
+            <div  id="mclc" class="main__car__list__container">
                 <div class="car__list__text">
                     <h1>CARS FOR RENT</h1>
                     <div></div>
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="contact__banner">
-            <div class="contact__banner__container">
+            <div id="cbc" class="contact__banner__container">
                 <div class="banner__number">
                     <h2><img src="/materials/images/Loc_PhoneIcon.png">+995-598-18-99-39</h2>
                     <p>Call Today For Booking Your Next Ride</p>
@@ -138,7 +138,7 @@
                     <p>Our Location<img src="/materials/images/Loc_Gps.png"></p>
                 </div>
                 <div class="map__and__contact">
-                    <div class="map"></div>
+                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1587.7393420659603!2d37.81658613709115!3d55.75150891465934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acaf2f4363b55%3A0x1c123a66d47f47c3!2z0J3QvtCy0L7Qs9C40YDQtdC10LLQvg!5e0!3m2!1sru!2sru!4v1721744244790!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     <div class="contact__block">
                         <div class="contacts">
                             <p><b>Email:</b><br>example@gmail.com</p>
@@ -163,6 +163,30 @@
                 </div>
             </div>
         </footer>
+        <div class="rent__pop__up__bg no-vision">
+        </div>
+        <div class="rent__pop__up__bg__container no-vision">
+            <div class="rent__pop__up">
+                <div class="rpu__container">
+                    <p class="cross">X</p>
+                    <img>
+                    <div class="arrows">
+                        <img src="/materials/images/Polygon 1.png">
+                        <img src="/materials/images/Polygon 2.png">
+                    </div>
+                    <p></p>
+                    <div class="info">
+                        <p><b>Year of release:</b><br>some year</p>
+                        <p><b>Engine:</b><br>some engine</p>
+                    </div>
+                    <div class="price__container">
+                        <div class="price-line"></div>
+                            <div class="price"><p>20$</p></div>
+                        <div class="price-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./main.js"></script>
 </body>
