@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lang_style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/materials/images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/materials/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/materials/images/icons/favicon-16x16.png">
@@ -23,7 +24,20 @@
                         <button><img src="/materials/images/Head_HomeIcon.png">HOME</button>
                         <button><img src="/materials/images/Head_CarIcon.png"><a href="#mclc">OUR CARS</a></button>
                         <button><img src="/materials/images/Head_ContIocn.png"><a href="#cbc">CONTACTS</a></button>
-                        <button>LANGUAGE<img src="/materials/images/Head_LangIcon.png"></button>
+                        <div class="lang">
+                            <button>LANGUAGE<img src="/materials/images/Head_LangIcon.png"></button>
+                            <div class="lang__select">
+                                <div class="lang__pos">
+                                    <p class="eng"><img src="/materials/images/lang_eng.png">English</p>
+                                </div>
+                                <div class="lang__pos">
+                                    <p class="geo"><img src="/materials/images/lang_geo.png">ქართული</p>
+                                </div>
+                                <div class="lang__pos">
+                                    <p class="ru"><img src="/materials/images/lang_ru.png">Русский</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="header__line"></div>
@@ -121,14 +135,8 @@
         <div class="contact__banner">
             <div id="cbc" class="contact__banner__container">
                 <div class="banner__number">
-                    <h2><img src="/materials/images/Loc_PhoneIcon.png">+995-598-18-99-39</h2>
+                    <h2><img src="/materials/images/Loc_PhoneIcon.png">+995-599-29-09-30</h2>
                     <p>Call Today For Booking Your Next Ride</p>
-                </div>
-                <div class="social__media">
-                    <div><img src="/materials/images/Loc_Facebook.png"></div>
-                    <div><img src="/materials/images/Loc_Telegram.png"></div>
-                    <div><img src="/materials/images/Loc_Instagram.png"></div>
-                    <div><img src="/materials/images/Loc_Youtube.png"></div>
                 </div>
             </div>
         </div>
@@ -138,11 +146,11 @@
                     <p>Our Location<img src="/materials/images/Loc_Gps.png"></p>
                 </div>
                 <div class="map__and__contact">
-                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1587.7393420659603!2d37.81658613709115!3d55.75150891465934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acaf2f4363b55%3A0x1c123a66d47f47c3!2z0J3QvtCy0L7Qs9C40YDQtdC10LLQvg!5e0!3m2!1sru!2sru!4v1721744244790!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d215.13759843836928!2d44.80176896700808!3d41.691351527596346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQxJzI4LjgiTiA0NMKwNDgnMDYuMyJF!5e0!3m2!1sru!2sru!4v1722000407414!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     <div class="contact__block">
                         <div class="contacts">
-                            <p><b>Email:</b><br>example@gmail.com</p>
-                            <p><b>Hours:</b><br>24/7 whole week</p>
+                            <p><b>Email:</b><br><br>kheladze.nana4@gmail.com</p>
+                            <p><b>Hours:</b><br><br>24/7 whole week</p>
                         </div>
                         <div class="circles">
                             <div></div>
@@ -189,5 +197,6 @@
         </div>
     </div>
     <script src="./main.js"></script>
+    <script src="./lang.js"></script>
 </body>
 </html>

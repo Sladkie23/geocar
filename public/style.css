@@ -60,7 +60,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 }
 .header__container { 
     margin: 0 auto;
-    width: 1220px;
+    max-width: 1220px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -112,6 +112,12 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     letter-spacing: 9px;
 }
 
+@media (max-width: 1220px) {
+    .header__container {
+        max-width: 834px;
+    }
+}
+
 .main {
     background-color: rgb(247, 247, 247);
     width: 100%;
@@ -119,7 +125,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 
 .main__container {
     margin: 0 auto;
-    width: 1220px;
+    max-width: 1220px;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -171,13 +177,38 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     height: 187px;
 }
 
+@media (max-width:1220px) {
+    .main__container {
+        max-width: 834px;
+    }
+    .main__notice {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .main__notice__elem {
+        width: 100%;
+        justify-content: center;
+    }
+    .main__notice__elem p {
+        width: 100%;
+        font-size: 30px;
+    }
+    .main__notice__elem hr {
+        width: 170px;
+        height: 1px;
+        background-color: black;
+    }
+}
+
 .main__car__list {
     background-color: rgb(236, 236, 236);
     width: 100%;
 }
 
 .main__car__list__container {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 100px;
@@ -251,6 +282,12 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     margin-top: 2px;
 }
 
+@media (max-width:1220px) {
+    .main__car__list__container {
+        max-width: 834px;
+    }
+}
+
 /*CONTACT__BANNER*/
 
 .contact__banner {
@@ -262,7 +299,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     background-size: cover;
 }
 .contact__banner__container {
-    width: 1220px;
+    max-width: 1220px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -295,14 +332,20 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     justify-content: center;
 }
 
+@media (max-width:1220px) {
+    .contact__banner__container {
+        max-width: 834px;
+    }
+}
+
 .our__location {
     width: 100%;
-    height: 800px;
     background-color: rgb(247, 247, 247);
 }
 .our__location__container {
-    width: 1220px;
+    max-width: 1220px;
     gap: 100px;
+    padding-bottom: 260px;
     margin: 0 auto;
 }
 .ol__text__block {
@@ -325,13 +368,12 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 
 .map__and__contact {
     width: 100%;
-    height: 370px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 .map {
-    height: 100%;
+    height: 370px;
     width: 611px;
     border-radius: 40px;
     background-color: blanchedalmond;
@@ -345,7 +387,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 }
 
 .contact__block {
-    height: 100%;
+    height: 370px;
     width: 520px;
     border-radius: 40px;
     padding: 25px;
@@ -376,12 +418,30 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     border-radius: 20px;
 }
 
+@media (max-width: 1220px) {
+    .our__location__container {
+        max-width: 834px;
+        padding-bottom: 160px;
+    }
+    .map__and__contact {
+        flex-direction: column;
+        gap: 100px;
+        justify-content: space-between;
+    }
+    .map {
+        width: 100%;
+    }
+    .contact__block {
+        width: 100%;
+    }
+}
+
 .footer {
     width: 100%;
     background-color: #232222;
 }
 .footer__container {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 100px;
     display: flex;
@@ -396,6 +456,12 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     align-items: center;
     color: white;
     font-size: 12px;
+}
+
+@media (max-width:1220px) {
+    .footer__container {
+        max-width: 834px;
+    }
 }
 
 .rent__pop__up__bg {
