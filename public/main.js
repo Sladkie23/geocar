@@ -24,3 +24,22 @@ arrows[0].addEventListener("click", ()=>{
 arrows[1].addEventListener("click", ()=>{
     console.log("right")
 })
+
+
+const url = "getCars.php"
+
+const getResource = async(url) => {
+    const response = await fetch(url)
+
+    if (response.ok != true) {
+        console.log("Connection failed!")
+    } else {
+        return await response.json()
+    }
+}
+
+getResource(url).then((data)=>{console.log(data)})
+
+
+
+
