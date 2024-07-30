@@ -112,9 +112,47 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     letter-spacing: 9px;
 }
 
+.phone__row {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    opacity: 60%;
+    display: none;
+    justify-content: end;
+    padding-right: 30px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu button {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 30px;
+}
+
 @media (max-width: 1220px) {
     .header__container {
         max-width: 834px;
+    }
+}
+@media (max-width:781px) {
+    .header__container {
+        max-width: 360px;
+        padding-bottom: 200px;
+        justify-content: end;
+    }
+    .header__slogan img {
+        display: none;
+    }
+    .header__row {
+        display: none;
+    }
+    .phone__row {
+        display: flex;
     }
 }
 
@@ -150,6 +188,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     padding: 20px;
     gap: 20px;
 }
+
 .main__notice__elem img {
     width: 100px;
     height: 100px;
@@ -201,6 +240,18 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
         background-color: black;
     }
 }
+@media (max-width:781px) {
+    .main__container {
+        max-width: 360px;
+    }
+    .main__notice__elem p {
+        display: none;
+    }
+    .main__notice__elem {
+        height: 160px;
+    }
+}
+
 
 .main__car__list {
     background-color: rgb(236, 236, 236);
@@ -214,12 +265,13 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 80px;
 }
 
 .car__list__text {
-    min-width: 537px;
-    height: 98px;
+    max-width: 650px;
+    height: 160px;
     font-size: 38px;
     gap: 10px;
     text-align: center;
@@ -278,14 +330,36 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
+    transition: all 0.3s ease;
 }
 .rent__button img {
     margin-top: 2px;
+    transition: all 0.3s ease;
+}
+.rent__button:hover {
+    background-color: rgb(219, 219, 219);
+}
+.rent__button:hover img {
+    margin-left: 5px;
 }
 
 @media (max-width:1220px) {
     .main__car__list__container {
         max-width: 834px;
+    }
+}
+@media (max-width:781px) {
+    .main__car__list__container {
+        max-width: 360px;
+    }
+    .car__list__text div {
+        display: none;
+    }
+    .car__list__text {
+        width: 300px;
+        height: 98px;
+        font-size: 30px;
     }
 }
 
@@ -336,6 +410,23 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 @media (max-width:1220px) {
     .contact__banner__container {
         max-width: 834px;
+    }
+}
+@media (max-width:781px) {
+    .contact__banner__container {
+        max-width: 360px;
+    }
+    .banner__number h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .banner__number p {
+        font-size: 15px;
+        margin-left: 59px;
+    }
+    .banner__number img {
+        width: 32px;
+        height: 40px;
     }
 }
 
@@ -436,6 +527,21 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
         width: 100%;
     }
 }
+@media (max-width:781px) {
+    .our__location__container {
+        max-width: 360px;
+        padding-bottom: 80px;
+    }
+    .map__and__contact {
+        gap: 50px;
+    }
+    .circles {
+        display: none;
+    }
+    .contacts {
+        font-size: 25px;
+    }
+}
 
 .footer {
     width: 100%;
@@ -462,6 +568,11 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 @media (max-width:1220px) {
     .footer__container {
         max-width: 834px;
+    }
+}
+@media (max-width:781px) {
+    .footer__container {
+        max-width: 360px;
     }
 }
 
@@ -522,6 +633,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     animation-iteration-count: 1;
     animation-direction: normal;
 }
+
 @keyframes rent__pop__up__anim {
     0% {
         opacity: 0%;
@@ -559,7 +671,28 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     height: 368px;
     border-radius: 20px;
     background-color: antiquewhite;
+    object-fit: cover;
 }
+
+.price-line {
+    height: 1px;
+    width: 100px;
+    background-color: red;
+}
+
+@media (max-width:781px) {
+    .rent__pop__up {
+        width: 350px;
+    }
+    .rpu__container img {
+        width: 340px;
+        height: 250px;
+    }
+    .price-line {
+        width: 40px;
+    }
+}
+
 .arrows {
     width: 54px;
     height: 16px;
@@ -592,11 +725,6 @@ h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
     height: 50px;
     border: 1px solid red;
     border-radius: 25px;
-}
-.price-line {
-    height: 1px;
-    width: 100px;
-    background-color: red;
 }
 
 .no-vision {

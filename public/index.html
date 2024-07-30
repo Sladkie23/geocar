@@ -18,23 +18,41 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
+                <div class="phone__row">
+                    <div class="menu">
+                        <div class="lang">
+                            <button id="LANGUAGE">LANG</button>
+                            <div class="lang__select">
+                                <div id="eng" class="lang__pos">
+                                    <p><img src="/materials/images/lang_eng.png">English</p>
+                                </div>
+                                <div id="geo" class="lang__pos">
+                                    <p><img src="/materials/images/lang_geo.png">ქართული</p>
+                                </div>
+                                <div id="rus" class="lang__pos">
+                                    <p><img src="/materials/images/lang_ru.png">Русский</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="header__row">
                     <div class="logo"><img src="/materials/images/logo/Head_CREtext.png"></div>
                     <div class="buttons">
-                        <button><img src="/materials/images/Head_HomeIcon.png">HOME</button>
-                        <button><img src="/materials/images/Head_CarIcon.png"><a href="#mclc">OUR CARS</a></button>
-                        <button><img src="/materials/images/Head_ContIocn.png"><a href="#cbc">CONTACTS</a></button>
+                        <button id="HOME"><img src="/materials/images/Head_HomeIcon.png">HOME</button>
+                        <button id="OURCARS"><img src="/materials/images/Head_CarIcon.png"><a href="#mclc">OUR CARS</a></button>
+                        <button id="CONTACTS"><img src="/materials/images/Head_ContIocn.png"><a href="#cbc">CONTACTS</a></button>
                         <div class="lang">
-                            <button>LANGUAGE<img src="/materials/images/Head_LangIcon.png"></button>
+                            <button id="LANGUAGE">LANGUAGE<img src="/materials/images/Head_LangIcon.png"></button>
                             <div class="lang__select">
-                                <div class="lang__pos">
-                                    <p class="eng"><img src="/materials/images/lang_eng.png">English</p>
+                                <div id="eng" class="lang__pos">
+                                    <p><img src="/materials/images/lang_eng.png">English</p>
                                 </div>
-                                <div class="lang__pos">
-                                    <p class="geo"><img src="/materials/images/lang_geo.png">ქართული</p>
+                                <div id="geo" class="lang__pos">
+                                    <p><img src="/materials/images/lang_geo.png">ქართული</p>
                                 </div>
-                                <div class="lang__pos">
-                                    <p class="ru"><img src="/materials/images/lang_ru.png">Русский</p>
+                                <div id="rus" class="lang__pos">
+                                    <p><img src="/materials/images/lang_ru.png">Русский</p>
                                 </div>
                             </div>
                         </div>
@@ -43,8 +61,9 @@
                 <div class="header__line"></div>
                 <div class="header__slogan">
                     <img src="/materials/images/Head_GEOflag.png">
-                    <p>Rent Car in<br> Tbilisi</p>
+                    <p id="RENTCARINTBILISI">Rent Car in<br> Tbilisi</p>
                 </div>
+                <div class="header__line"></div>
             </div>
         </header>
         <main class="main">
@@ -53,26 +72,26 @@
                     <div class="main__notice__elem">
                         <img src="/materials/images/Head_FastIcon.png">
                         <div>
-                            <h2>Fast & Easy Booking</h2>
+                            <h2 id="FASTANDEASYBOOKING">Fast & Easy Booking</h2>
                             <hr>
                         </div>
-                        <p>Effortless Reservations Await! Skip the clicks and dial into simplicity. Our Fast & Easy Booking ensures instant access to your dream ride. Reach us with a quick call, and let the journey begin. Swift reservations, personalized service – because your travel plans deserve a human touch. Connect with us now for a seamless road ahead!</p>
+                        <p id="noticeP1">Effortless Reservations Await! Skip the clicks and dial into simplicity. Our Fast & Easy Booking ensures instant access to your dream ride. Reach us with a quick call, and let the journey begin. Swift reservations, personalized service – because your travel plans deserve a human touch. Connect with us now for a seamless road ahead!</p>
                     </div>
                     <div class="main__notice__elem">
                         <img src="/materials/images/Head_PickIcon.png">
                         <div>
-                            <h2>Many Pickup Locations</h2>
+                            <h2 id="MANYPICKUPLOCATION">Many Pickup Locations</h2>
                             <hr>
                         </div>
-                        <p>Diverse Destinations, One Stop! Explore the freedom of choice with our Many Pickup Locations. From city centers to airports, we’ve got you covered. No matter where you are, your journey begins at your convenience. Discover the ease of multiple options – because the road to your adventure starts where you are. Find your ideal pickup point and let the exploration unfold!</p>
+                        <p id="noticeP2">Diverse Destinations, One Stop! Explore the freedom of choice with our Many Pickup Locations. From city centers to airports, we’ve got you covered. No matter where you are, your journey begins at your convenience. Discover the ease of multiple options – because the road to your adventure starts where you are. Find your ideal pickup point and let the exploration unfold!</p>
                     </div>
                     <div class="main__notice__elem">
                         <img src="/materials/images/Head_SafeIcon.png">
                         <div>
-                            <h2>Fast & Easy Booking</h2>
+                            <h2 id="SAFETRAVELS">Safe Travels</h2>
                             <hr>
                         </div>
-                        <p>Family adventures made secure! Our commitment to safety extends to the youngest members of your crew. Introducing our Baby Seat Service – ensuring your little explorers ride in comfort and security. Choose peace of mind for every journey, knowing that we prioritize the safety of your precious passengers. Elevate your family travel experience with our hassle-free Baby Seat Service.</p>
+                        <p id="noticeP3">Family adventures made secure! Our commitment to safety extends to the youngest members of your crew. Introducing our Baby Seat Service – ensuring your little explorers ride in comfort and security. Choose peace of mind for every journey, knowing that we prioritize the safety of your precious passengers. Elevate your family travel experience with our hassle-free Baby Seat Service.</p>
                     </div>
                 </div>
             </div>
@@ -80,33 +99,32 @@
         <div class="main__car__list">
             <div  id="mclc" class="main__car__list__container">
                 <div class="car__list__text">
-                    <h1>CARS FOR RENT</h1>
+                    <h1 id="CARSFORRENT">CARS FOR RENT</h1>
                     <div></div>
                 </div>
                 <div class="car__list">
                 </div>
-
             </div>
         </div>
         <div class="contact__banner">
             <div id="cbc" class="contact__banner__container">
                 <div class="banner__number">
                     <h2><img src="/materials/images/Loc_PhoneIcon.png">+995-599-29-09-30</h2>
-                    <p>Call Today For Booking Your Next Ride</p>
+                    <p id="CALLTODAY">Call Today For Booking Your Next Ride</p>
                 </div>
             </div>
         </div>
         <div class="our__location">
             <div class="our__location__container">
                 <div class="ol__text__block">
-                    <p>Our Location<img src="/materials/images/Loc_Gps.png"></p>
+                    <p id="OURLOCATION">Our Location<img src="/materials/images/Loc_Gps.png"></p>
                 </div>
                 <div class="map__and__contact">
                     <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d215.13759843836928!2d44.80176896700808!3d41.691351527596346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQxJzI4LjgiTiA0NMKwNDgnMDYuMyJF!5e0!3m2!1sru!2sru!4v1722000407414!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     <div class="contact__block">
                         <div class="contacts">
                             <p><b>Email:</b><br><br>kheladze.nana4@gmail.com</p>
-                            <p><b>Hours:</b><br><br>24/7 whole week</p>
+                            <p id="HOURS"><b>Hours:</b><br><br>24/7 whole week</p>
                         </div>
                         <div class="circles">
                             <div></div>
@@ -135,13 +153,13 @@
                     <p class="cross">X</p>
                     <img>
                     <div class="arrows">
-                        <img src="/materials/images/Polygon 1.png">
-                        <img src="/materials/images/Polygon 2.png">
+                        <img id="left" src="/materials/images/Polygon 1.png">
+                        <img id="right" src="/materials/images/Polygon 2.png">
                     </div>
                     <p></p>
                     <div class="info">
-                        <p><b>Year of release:</b><br>some year</p>
-                        <p><b>Engine:</b><br>some engine</p>
+                        <p id="pop-up-year"></p>
+                        <p id="pop-up-engine"><b>Engine:</b><br>some engine</p>
                     </div>
                     <div class="price__container">
                         <div class="price-line"></div>
